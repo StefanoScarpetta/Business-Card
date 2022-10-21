@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+html, body {
+    height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    display: table;
+    margin: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: gray;
+    background-image: url(../public/images/react-icon-large.png);
+    background-repeat: space;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    max-width: 350px;
+    color: white;
+    background-color: black;
 }
-
-.App-link {
-  color: #61dafb;
+.info, .footer {
+    text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info {
+    padding-top: 20px;
+    position: relative;
+    padding-bottom: 60px;
+}
+.info, .footer, .interests, .about {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+.interests {
+    padding-bottom: 10px;
+}
+.footer {
+    background-color: white;
+    padding: 15px 0px;
+}
+button, .info-button {
+    border: none;
+    background-color: white;
+    padding: 0px 15px;
+}
+.button-container {
+    display: flex;
+    margin: 0;
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.info-button {
+    margin: 0px 10px;
+    display: flex;
+}
+.info-button > img {
+    height: 35px;
+    vertical-align: middle;
+    padding: 11px
+}
+.info-button > p {
+    font-size: 17px;
+    padding-top: 0px;
+    color: black;
+}
+.foto {
+    max-width: 100%;
+}
+.text, .profession {
+    margin-top: -20px;
+}
+.about > h1 {
+    padding-top: 15px;
+}
+.profession {
+    margin-bottom: 0px;
+}
+.site {
+    color: white;
+    text-decoration: none;
+}
+p, a {
+    text-decoration: none;
 }
